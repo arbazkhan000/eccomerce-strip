@@ -40,11 +40,11 @@ const router = createBrowserRouter([
                 path: "*",
                 element: <ErrorPage />,
             },
+            {
+                path: "success",
+                element: <SuccessPage />,
+            },
         ],
-    },
-    {
-        path: "/success",
-        element: <SuccessPage />,
     },
 ]);
 

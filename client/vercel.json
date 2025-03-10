@@ -1,0 +1,35 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/product/:id",
+            "dest": "/product/[id].html"
+        },
+        {
+            "src": "/checkout",
+            "dest": "/checkout.html"
+        },
+        {
+            "src": "/contact",
+            "dest": "/contact.html"
+        },
+        {
+            "src": "/success",
+            "dest": "/success.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/error.html"
+        }
+    ]
+}
